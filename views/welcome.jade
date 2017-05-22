@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1  welcome #{user}
+  button(onclick="move()") logout
+
+  script.
+    function move() {
+      window.location.href = '/logout'
+    }
